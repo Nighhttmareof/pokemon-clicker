@@ -1,0 +1,26 @@
+.item {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+    background-color: rgba(239, 239, 239, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item_inactive {
+    opacity: 0.7;
+}
+
+.item > div {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover > div {
+    transform: scale(1.3);
+}

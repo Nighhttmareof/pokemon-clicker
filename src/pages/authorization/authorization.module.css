@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_block {
+    margin-top: 1.25rem;
+    width: 25rem; 
+    padding-bottom: 1.5rem;
+    box-shadow: 0px 0px 16px 0px rgba(58, 58, 58, 0.1);
+    border-radius: 1rem;
+}
+
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.form_block {
+    width: 22rem;
+    margin: auto;
+}
+
+.auth_tabs {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto 0 auto;
+    width: 22rem;
+    min-height: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+
+.auth_tabs::after{
+    content: '';
+    position: absolute;
+    width: 46px;
+    height: 2px;
+    background-color:rgba(54, 95, 172, 1);
+    top: 47px;
+    transition: all 0.3s ease;
+}
+
+.auth_tab {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.auth_tab:hover {
+    cursor: pointer;
+}
+
+.auth_tabs.tab_signUp::after {
+    left: 7.25rem;
+}
+
+.auth_tabs.tab_signIn::after {
+    left: 12rem;
+}
+
+.tab_active {
+    color: rgba(54, 95, 172, 1);
+}
+
+.input_block {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.active_label:before {
+    content: '';
+    min-width: 14px;
+    padding-left: 14px;
+    height: 22px;
+    background: no-repeat center center url(../../../public/icons/star.svg);
+}
+
